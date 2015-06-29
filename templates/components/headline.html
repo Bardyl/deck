@@ -12,7 +12,7 @@
     </div>
     {% if episode %}
         <time>
-            <span class="date">{{ episode.time|date:"l j F" }}</span>, à <span class="hour">{{ episode.time.hour }}h{{ episode.time.minute|zfill:2 }}</span>
+            <span class="date">{{ episode.time|date:"l j F Y" }}</span>, à <span class="hour">{{ episode.time.hour }}h{{ episode.time.minute|zfill:2 }}</span>
         </time>
     {% endif %}
     <h1>
